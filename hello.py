@@ -24,11 +24,11 @@ def check_win(player, computer):
             return "scissors cut rock! you lose"
         else:
             return "paper covers rock! you win"
-    elif player == "paper":
-        if computer == "scissors":
-            return "scissors cut paper! you lose"
+    elif player == "scissors":
+        if computer == "paper":
+            return "scissors cut paper! you win"
         else:
-            return "paper covers rock! you win"
+            return "rock smashes scissors! you lose"
         
 
 choices = get_choices()
